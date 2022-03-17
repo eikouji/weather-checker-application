@@ -38,9 +38,15 @@
             <label class="city-search-label" for="search">Search for a City:</label>
             <input name="current-city-name" id="current-city-name" type="text" autofocus="true" class="form-input" />
             <button type="submit" class="btn">Search</button>
-
         </form>
      </div>
+
+     <!-- section for previously searched cities -->
+
+      <div class="search-history" id="search-history">
+          <label class="search-history-label" for="search-history">Search History</label>
+          <h3 class="card-header text-uppercase" id="search-history"></h3>
+      </div>
     </div>
 </main>
 
@@ -50,22 +56,25 @@
 
 <!-- Current Weather Box, Weather Icon, City Name, Temp, Wind, Humidity, UV index-->
 <section class="current-weather-box">
-
+  <div class="current-weather-by-city"></div>
 
 
 </section>
 
 <!-- 5 Day Forecast Boxes, Weather Icon, City Name, Temp, Wind, Humidity, UV index -->
-<section class="5-day-forecast-box">
-  <div class="5-day-forecast">
-    <div class="day-1-forecast"></div>
-    <div class="day-2-forecast"></div>
-    <div class="day-3-forecast"></div>
-    <div class="day-4-forecast"></div>
-    <div class="day-5-forecast"></div>
-    <div class="day-6-forecast"></div>
-  </div>
-</section>
+  <section class="5-day-forecast-box">
+    <div class="card">
+        <h3 class="card-header text-uppercase">5 Day Forecast</h3>
+        <div class="col-1, row-5">
+          <div id="5-day-forecast">
+            <div class="day-forecast" id="day-1">Day 1</div>
+            <div class="day-forecast" id="day-2">Day 2</div>
+            <div class="day-forecast" id="day-3">Day 3</div>
+            <div class="day-forecast" id="day-4">Day 4</div>
+            <div class="day-forecast" id="day-5">Day 5</div>
+        </div>
+    </div>
+  </section>
 
 
 <script src="./assets/js/weather-check.js"></script>
