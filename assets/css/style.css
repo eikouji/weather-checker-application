@@ -1,4 +1,60 @@
 /* my api key for this project: 8f9e52c6b60e9de371fda1c4748cde23 */
+
 * {
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+main {
+    margin: 20px auto;
+    width: 90%;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.hero {
+    background: linear-gradient( to left, blue, rgb(164, 236, 245));
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/* search bar to be blue, same width as search box */
+.btn {
+    background: rgb(92, 198, 240);
+    color: white;
+    padding: 6px 6px;
+    width: 100%;
+    display: block;
+    margin: 5px, 0;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px grey;
+}
+
+.btn:hover {
+    background-color: rgb(28, 115, 187);
+    color: white;
+    transform: translate(0, 0);
+    box-shadow: 2px 2px darkblue;
+    
+}
+
+
+
+/* remove the blue underline from the OpenWeather link in the footer */
+.ow-link {
+  text-decoration: none;
 }
