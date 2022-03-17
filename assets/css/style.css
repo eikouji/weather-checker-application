@@ -1,5 +1,13 @@
 /* my api key for this project: 8f9e52c6b60e9de371fda1c4748cde23 */
 
+:root {
+    --light-blue: rgb(164, 236, 245);
+    --light-teal-blue: rgb(154, 248, 240);
+    --darker-blue: rgb(11, 11, 160);
+    --black: rgb(28, 9, 44);
+}
+
+
 * {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
@@ -21,7 +29,7 @@ p {
 }
 
 .hero {
-    background: linear-gradient( to left, blue, rgb(164, 236, 245));
+    background: linear-gradient( to left, var(--darker-blue), var(--light-blue));
     color: white;
     text-align: center;
 }
@@ -32,7 +40,7 @@ p {
 
 /* search bar to be blue, same width as search box */
 .btn {
-    background: rgb(92, 198, 240);
+    background: linear-gradient( to left, var(--darker-blue), var(--light-blue));
     color: white;
     padding: 6px 6px;
     width: 100%;
@@ -41,18 +49,29 @@ p {
     border-radius: .3rem;
     border: none;
     outline: none;
-    box-shadow: 3px 3px grey;
+
+    box-shadow: 
+      inset 0 0 0.5em ,
+      3px 3px rgb(212, 205, 205);
+    text-decoration: none;
+    cursor: pointer;
+    
+    text-shadow: 
+      0 0 0.7em var(--light-teal-blue);
+
+   position: relative;
 }
 
 .btn:hover {
     background-color: rgb(28, 115, 187);
     color: white;
     transform: translate(0, 0);
-    box-shadow: 2px 2px darkblue;
+
+    box-shadow: 
+      inset 0 0 0.5em var(--light-teal-blue),
+      4px 4px rgb(43, 19, 82);
     
 }
-
-
 
 /* remove the blue underline from the OpenWeather link in the footer */
 .ow-link {
