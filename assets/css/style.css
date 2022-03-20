@@ -34,6 +34,14 @@ p {
     text-align: center;
 }
 
+/* card styling */
+.day-forecast {
+    margin: 0 0 20px 0;
+    border: 3px, var(--black);
+    border: var(--black);
+    background-color: linear-gradient( to left, var(--darker-blue), var(--light-blue));
+}
+
 
 /* search bar to be blue, same width as search box */
 .btn {
@@ -80,3 +88,5 @@ p {
 .ow-link {
   text-decoration: none;
 }
+
+
