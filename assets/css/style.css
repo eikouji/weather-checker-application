@@ -1,4 +1,4 @@
-/* my api key for this project: 8f9e52c6b60e9de371fda1c4748cde23 */
+/* my api key for this project: f95d4558f1f3deec5b9d71145b7381a7 */
 
 :root {
     --light-blue: rgb(164, 236, 245);
@@ -57,8 +57,6 @@ p {
     display: block;
     margin: 5px, 0;
     border-radius: 4px;
-    border: none;
-    outline: none;
 
     font-size: 18px;
 
@@ -95,6 +93,10 @@ p {
     width: 100%;
 }
 
+
+footer {
+   text-align: center;
+}
 /* remove the blue underline from the OpenWeather link in the footer */
 .ow-link {
   text-decoration: none;

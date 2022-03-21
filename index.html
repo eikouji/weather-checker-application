@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- my api key for this project: 8f9e52c6b60e9de371fda1c4748cde23 -->
+<!-- my api key for this project: f95d4558f1f3deec5b9d71145b7381a7 -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,10 +34,10 @@
         <h3 class="card-header text-uppercase"></h3>
 
         <!-- search form to input city name -->
-        <form id="city-search" class="card-body">
-            <label class="city-search-label" for="search">Search for a City:</label>
-            <input name="current-city-name" id="current-city-name" type="text" autofocus="true" class="form-input" />
-            <button type="submit" class="btn">Search</button>
+        <form id="city-search-form" class="card-body">
+            <label class="city-search-label" for="search-for-a-city">Search for a City:</label>
+            <input name="current-city-name" id="current-city-name" type="text" autofocus="true" class="search-city-form-input" placeholder="Enter a City" />
+            <button type="submit" class="btn" value="Search">Search</button>
         </form>
      </div>
 
@@ -58,10 +58,14 @@
 <section class="current-weather">
   <div class="container">
     <h2 class="searched-city-name">Searched City</h2>
-     <p>Temp</p>
-     <p>Wind</p>
-     <p>Humidty</p>
-     <p>UV Index</p>
+    <div class="display">
+
+     <div class="date"></div>
+     <div class="temp"></div>
+     <div class="wind-speed"></div>
+     <div class="humidity"></div>
+     <div class="UV-index"></div>
+    </div>
   </div>
 </section>
 
@@ -121,6 +125,6 @@
 
 <script src="./assets/js/weather-check.js"></script>
 </body>
-<footer>
+<footer class="footer">
     Up-to-Date Weather information provided by <a class="ow-link" href="https://openweathermap.org/">OpenWeather</a>
 </footer>
