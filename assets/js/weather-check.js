@@ -36,20 +36,9 @@ var displaySearchedCity = function(weatherData, citySearch) {
 }
 // search for city, weather gets displayed to current-weather-info section in html //
 
-
-/* 
-module example: 
-fetch("https://api.github.com/users/octocat/repos").then(function(response) {
-  response.json().then(function(data) {
-    console.log(data);
-  });
-});
-
-*/
-
 // //
 
-fetch("https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={process.env.API_KEY}").then(function(response) {
+fetch("https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part} + "&appid=" + process.env.API_KEY + "").then(function(response) {
   response.json().then(function(data) {
       console.log(data);
   });
@@ -59,7 +48,7 @@ var getCurrentWeather = function(currentWeather) {
     // openWeather API //
     var apiKey = "process.env.API_KEY";
 
-    var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?&appid={apiKey}";
+    var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?" + "&appid=" + process.env.API_KEY + "";
 
     fetch(apiUrl).then(function(response) {
         response.json().then(function(data) {
