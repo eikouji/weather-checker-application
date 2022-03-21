@@ -9,7 +9,7 @@ require('dotenv').config()
 
 // call for current weather // 
 var getCurrentWeatherData = function(city) {
-    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city "&appid=f95d4558f1f3deec5b9d71145b7381a7&units=imperial";
+    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city "&appid=" + process.env.API_KEY + "&units=imperial";
     fetch(apiUrl)
       .then(function(response) {
           if (response.ok) {
