@@ -1,4 +1,4 @@
-// my api key for this project: f95d4558f1f3deec5b9d71145b7381a7 //
+//  //
 
 // vars for this project //
 var searchedCityForm = document.querySelector("#searched-city-form");
@@ -47,7 +47,7 @@ fetch("https://api.github.com/users/octocat/repos").then(function(response) {
 
 */
 
-// my api key: f95d4558f1f3deec5b9d71145b7381a7 //
+// //
 
 fetch("https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={process.env.API_KEY}").then(function(response) {
   response.json().then(function(data) {
